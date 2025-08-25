@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeetCode Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 LeetCode Progress Dashboard</h1>
+
+    <input type="text" id="username" placeholder="Enter your LeetCode username" />
+    <button onclick="fetchStats()">Fetch Stats</button>
+    <button onclick="fetchInsights()">Get AI Insights</button>
+    <button onclick="fetchSuggestions()">Refresh Suggestions</button>
+
+    <div class="dashboard-row">
+      <div class="stats">
+        <canvas id="progressChart"></canvas>
+      </div>
+
+      <div class="aiInsights">
+        <h2>🧠 AI Insights</h2>
+        <p id="aiInsights">Your personalized feedback will appear here.</p>
+
+        <div class="suggestions">
+          <h3>💡 Suggested Problems</h3>
+          <ul id="problemList">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

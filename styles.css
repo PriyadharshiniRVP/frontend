@@ -1,0 +1,117 @@
+/* === Base Styling === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+}
+
+/* === Container === */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+/* === Header === */
+h1 {
+  text-align: center;
+  color: #00ffe7;
+  text-shadow: 0 0 8px #00ffe7;
+}
+
+/* === Input Field === */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1e1e2f;
+  color: #fff;
+  box-shadow: inset 0 0 5px rgba(0,255,255,0.2);
+}
+
+/* === Buttons === */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px 20px 0;
+  font-size: 16px;
+  background-color: #00ffe7;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffe7;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00ccbb;
+  transform: scale(1.05);
+}
+
+/* === Dashboard Layout === */
+.dashboard-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* === Chart Section === */
+.stats {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === AI Insights + Suggestions === */
+.aiInsights {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #00ffe7;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+.aiInsights h2 {
+  color: #00ffe7;
+  text-shadow: 0 0 6px #00ffe7;
+}
+
+#aiInsights {
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+/* === Suggested Problems === */
+.suggestions h3 {
+  color: #00ffe7;
+  margin-top: 20px;
+}
+
+#problemList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#problemList li {
+  margin-bottom: 10px;
+  color: #e0e0e0;
+  background-color: #1e1e2f;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,255,255,0.1);
+}
