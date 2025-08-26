@@ -2,37 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LeetCode Tracker</title>
+  <title>LeetEntraîneur </title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>📊 LeetCode Progress Dashboard</h1>
+  <h1>Welcome to LeetEntraîneur</h1>
+  <p class="tagline">Solve smarter. Grow faster. Track your LeetCode journey with AI-powered insights.</p>
 
+  <div class="input-actions">
     <input type="text" id="username" placeholder="Enter your LeetCode username" />
-    <button onclick="fetchStats()">Fetch Stats</button>
-    <button onclick="fetchInsights()">Get AI Insights</button>
-    <button onclick="fetchSuggestions()">Refresh Suggestions</button>
+    <div class="action-bar">
+      <button onclick="fetchStats()">Fetch Stats</button>
+      <button onclick="fetchInsights(document.getElementById('username').value.trim())">Get AI Insights</button>
+      <button onclick="fetchSuggestions(document.getElementById('username').value.trim())">Refresh Suggestions</button>
+    </div>
+  </div>
 
-    <div class="dashboard-row">
-      <div class="stats">
-        <canvas id="progressChart"></canvas>
+  <div class="dashboard-row">
+    <div class="stats">
+      <canvas id="progressChart"></canvas>
+    </div>
+
+    <div class="aiInsights">
+      <h2>🧠 AI Insights</h2>
+      <div id="aiInsights">
+        <p>Your personalized feedback will appear here.</p>
       </div>
 
-      <div class="aiInsights">
-        <h2>🧠 AI Insights</h2>
-        <p id="aiInsights">Your personalized feedback will appear here.</p>
-
-        <div class="suggestions">
-          <h3>💡 Suggested Problems</h3>
-          <ul id="problemList">
-            <!-- Dynamically populated -->
-          </ul>
-        </div>
+      <div class="suggestions">
+        <h3>💡 Suggested Problems</h3>
+        <ul id="suggestionsList">
+          <!-- Dynamically populated -->
+        </ul>
       </div>
     </div>
   </div>
+  <!-- Developer Profile Section -->
+<div class="developer-section">
+  <button onclick="toggleProfile()" class="profile-btn">👩‍💻 Developer Profile</button>
+
+  <div id="developerProfile" class="developer-profile">
+    <h3>Priyadharshini R</h3>
+    <p><strong>Role:</strong> CS Student and Fullstack Developer</p>
+    <p><strong>Specialisation:</strong> Cloud Computing</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/PriyadharshiniRVP" target="_blank">PriyadharshiniRVP</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyadharshini-ramachandran-535903217" target="_blank">Priyadharshini</a></p>
+    
+  </div>
+</div>
+
 
   <script src="script.js"></script>
 </body>
