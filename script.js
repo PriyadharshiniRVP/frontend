@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://mlserviceforleet-1.onrender.com";
 let chartInstance = null;
 
 async function fetchStats() {
