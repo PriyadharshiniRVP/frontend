@@ -1,6 +1,4 @@
-Frontend (Netlify-hosted)
 
-### Suggested README Structure:```markdown
 # 🖥️ LeetEntraîneur Frontend
 
 A clean, responsive dashboard that visualizes your LeetCode journey and ML-powered recommendations.
